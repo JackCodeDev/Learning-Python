@@ -1,0 +1,46 @@
+import random
+
+print("Welcome to the Number Guessing Game!")
+number_guess = random.randint(0, 100)
+print(number_guess)
+
+game_on = True
+easy_remaining = 10
+hard_remaining = 5
+def check_result(your_guess_input,number_guess):
+    
+    if your_guess_input < number_guess:
+        print("Too low")
+        print("Guess again!")
+        
+    elif your_guess_input == number_guess:
+        print("Yes, it is.")
+        print(f"Congratulation with exactly number guess: {number_guess}")
+
+    else:
+        print("Too high")
+        print("Guess again!")
+
+def set_difficulty():
+  choose = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
+  if choose == "easy":
+    return easy_remaining
+  else:
+    return hard_remaining
+turn = set_difficulty()
+while game_on:
+    print(f"You have {turn} attempts remaining to guess the number.")
+    your_guess = int(input("Make a guess: "))
+    turn -=1
+    check_result(your_guess,number_guess)
+    
+    if your_guess == number_guess:
+        game_on = False
+    elif turn ==0:
+        print("You lose because out of remaining!")
+        game_on = False
+
+
+    
+    
+
