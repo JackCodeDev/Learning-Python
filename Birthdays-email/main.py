@@ -4,9 +4,9 @@ import pandas
 import random
 
 
-MY_EMAIL = "jack.helpenglish@gmail.com"
-MY_PASSWORD = "hxplsbihmekioied"
-RECEIVER = "nguyensonhdtk94@gmail.com"
+MY_EMAIL = "Your email"
+MY_PASSWORD = "Your Password"
+RECEIVER = "Receiver email"
 
 today = datetime.now()
 month = today.month
