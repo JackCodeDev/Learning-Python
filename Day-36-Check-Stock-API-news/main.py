@@ -10,9 +10,9 @@ NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
 STOCK_API_KEY ="BOEOEQ49CN5ICFQ2"
 NEWS_API_KEY = "bc16af46d8a64f53b4d3b39af3d6353a"
-account_sid = "AC80f187f805ec2348f769f3ac2c4ddd93"
-auth_token = "cbd00a938a2973b6ff7b5a60e958848f"
-Twilio_phone = "+19206718445"
+account_sid = ""
+auth_token = ""
+Twilio_phone = ""
 ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decrease by 5% between yesterday and the day before yesterday then
 
